@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylvano van Wanrooij</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/JavaScript/script.js" defer></script> <!--Load the JavaScript after the html is loaded using "defer"-->
+    <script src="assets/JavaScript/language.js" defer></script> <!--In this case "defer" is essential, because the script has to be loaded after the id's are loaded-->
+    <link rel="icon" type="image/x-icon" href="media/images/favicon.png">
+</head>
+<body>
+    <!--topbar-->
+    <div id="navbar">
+        <nav>
+            <h3>Believe everything, trust nothing</h3> 
+        </nav>
+    </div>
+    <!--end topbar-->
+
+    <div id="languagePack">
+        <img class="ChooseLanguage" src="media/images/norwayFlag.svg" alt="Flag of norway" onclick="ToNorsk()">
+        <img class="ChooseLanguage" src="media/images/dutchFlag.svg" alt="Flag of the netherlands" onclick="ToDutch()">
+        <img class="ChooseLanguage" src="media/images/EnglandFlag.svg" alt="Flag of England" onclick="ToEnglish()">
+    </div>
+    
+    <div class="about-me">
+        <div>
+            <h2 class="name">Sylvano van Wanrooij</h2>
+            <dl>
+                <dt id="Personal">Personal: </dt>
+                    <dd><img src="media/images/age.svg" alt="age image" width="30px" height="25px"> 18</dd>
+                    <dd><img src="media/images/map-pin.svg" alt="pin pointer" width="30px" height="25px"><p id="location">The netherlands</p></dd>
+                    <dd><img src="media/images/schoolbus.svg" alt="school bus" width="30px" height="25px"><a class="SocialLinks" href="https://www.rocvantwente.nl/leslocaties/gieterij-200-hengelo.html">ROC van Twente - Hengelo</a></dd>
+                <dt id="Socials">Socials: </dt>
+                    <dd><img src="media/images/github.svg" alt="Github logo"><a class="SocialLinks" href="https://github.com/quaatos" target="_blank">Github</a></dd>
+                    <dd><img src="media/images/gitlab.svg" alt="Gitlab logo"><a class="SocialLinks" href="https://gitlab.com/quaatos" target="_blank">Gitlab</a></dd>
+            </dl>
+
+            <h3 id="skills">Skills:</h3>
+            <dl>
+                <dt>Frontend:</dt>
+                    <dd><img src="media/images/html.svg" alt="html logo">- HTML</dd>
+                    <dd><img src="media/images/css.svg" alt="css logo">- CSS</dd>
+                    <dd><img src="media/images/javascript.svg" alt="JavaScript logo">- JavaScript</dd>
+                    <dd><img src="media/images/bootstrap.svg" alt="Bootstrap logo">- Bootstrap (Learning)</dd><br>
+
+                <dt>Backend:</dt>
+                    <dd><img src="media/images/php.svg" alt="php logo">- PHP</dd>
+                    <dd><img src="media/images/mysql.svg" alt="MySQL logo">- MySQL</dd>
+                    <dd><img src="media/images/c-sharp.svg" alt="C# logo">- C#</dd>
+                    <dd><img src="media/images/python.svg" alt="python logo">- Python (Tkinter)</dd>
+                    <dd><img src="media/images/tux.svg" alt="">- Linux</dd>
+              </dl>
+
+            <h3 id="languagesISpeak">Languages i speak:</h3>
+            <ul>
+                <li id="dutch">Dutch</li>
+                <li id="english">English</li>
+                <li id="norwegian">Norwegian (Learning)</li>
+            </ul>
+        </div>
+        
+        <div id="MyStory">
+            <article>
+                <div>
+                    <h2>Over mij</h2>
+                    Mijn naam is Sylvano van Wanrooij, ik ben 18 jaar en kom uit Eibergen.<br>
+                    Ik volg de opleiding software developer aan het ROC van Twente in hengelo.<br>
+                    Ik houd mij bezig met PHP, SQL, HTML, CSS, JavaScript en C#.<br>
+
+                    Al van jongs af aan ben ik geïnteresseerd in computers. Daarom wilde ik daar later ook mijn werk van maken.<br>
+                    De werking van computers en hoe ze met elkaar communiceren trekken mijn aandacht.<br>
+                    Daarom ben ik daarin mijn vrije tijd ook veel mee bezig.<br>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+</html>
