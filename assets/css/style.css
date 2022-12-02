@@ -6,6 +6,7 @@
 body {
     background-color: black;
     color: white;
+    font-size: 15px;
     font-family: blinker;
 }
 
@@ -22,8 +23,8 @@ body {
 }
 
 .ChooseLanguage {
-    width: 5rem;
-    height: 3.5rem;
+    width: 4rem;
+    height: 2.5rem;
 }
 
 #languagePack {
@@ -84,15 +85,25 @@ dd > img {
 }
 
 #MyStory {
-    right: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     border: 4px solid #ffff00;
-    width: 85rem;
+    width: 67rem;
     height: 49pc;
     margin-right: 0.3rem;
     margin-top: 0.3rem;
     border-radius: 10px;
 }
 
-article > div {
+#me {
+    margin-right: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    left: 0;
+    width: 10rem;
+}
+
+div > article {
     margin: 2rem;
 }

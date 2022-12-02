@@ -7,8 +7,16 @@ let norwegian = document.getElementById('norwegian');
 let myLocation = document.getElementById('location');
 let Personal = document.getElementById('Personal');
 let Socials = document.getElementById('Socials');
-const filepath = 
 
+let path = 'assets/textfiles/aboutme.html';
+
+function ShowTextFromFile() {
+    fetch(path)
+        .then(response => response.text())
+        .then(text => document.getElementById('contentAboutMe').innerHTML = text)
+}
+
+ShowTextFromFile(path);
 function ToNorsk() {
     skills.innerHTML = "mine ferdigheter:";
     languages.innerHTML = "språk jeg snakker:";
@@ -18,6 +26,9 @@ function ToNorsk() {
     myLocation.innerHTML = "Nederland";
     Personal.innerHTML = "personlig";
     Socials.innerHTML = "sosiale medier";
+
+    path = 'assets/textfiles/ommeg.html';
+    ShowTextFromFile(path);
 }
 
 function ToDutch() {
@@ -28,7 +39,10 @@ function ToDutch() {
     norwegian.innerHTML = "Noors (Aan het leren)";
     myLocation.innerHTML = "Nederland";
     Personal.innerHTML = "Persoonlijk";
-    Socials.innerHTML = "Sociaal";
+    Socials.innerHTML = "Sociaale media";
+
+    path = 'assets/textfiles/overmij.html';
+    ShowTextFromFile(path);
 }
 
 function ToEnglish() {
@@ -40,5 +54,8 @@ function ToEnglish() {
     myLocation.innerHTML = "The Netherlands";
     Personal.innerHTML = "Personal";
     Socials.innerHTML = "Socials";
+
+    path = 'assets/textfiles/aboutme.html';
+    ShowTextFromFile(path);
 }
 
