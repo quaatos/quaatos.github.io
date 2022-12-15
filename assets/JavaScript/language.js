@@ -46,7 +46,7 @@ function ToDutch() {
 }
 
 function ToEnglish() {
-    skills.innerHTML = "My skills:";
+    skills.innerHTML = "Skills:";
     languages.innerHTML = "Languages i speak:";
     dutch.innerHTML = "Dutch";
     english.innerHTML = "English";
@@ -58,4 +58,3 @@ function ToEnglish() {
     path = 'assets/textfiles/aboutme.html';
     ShowTextFromFile(path);
 }
-
